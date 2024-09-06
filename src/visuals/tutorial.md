@@ -28,3 +28,6 @@ You can use the js code snippet markdown to call run different loaders and compo
 ```
 ````
 
+## Integration
+Todo. This will outline how to bring in this repo as a submodule to transfer data to front-end story.
+
