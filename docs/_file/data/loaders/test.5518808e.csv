@@ -1,0 +1,7 @@
+year,amount,group
+1970,30,false
+1980,10,true
+1990,50,true
+2000,60,false
+2010,75,true
+2020,45,true

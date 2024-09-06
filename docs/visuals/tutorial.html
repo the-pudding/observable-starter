@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Tutorial | The Pudding: Data</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../_observablehq/theme-air,near-midnight.e68849dc.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../_observablehq/theme-air,near-midnight.e68849dc.css">
+<link rel="modulepreload" href="../_observablehq/client.d773d28c.js">
+<link rel="modulepreload" href="../_observablehq/runtime.56d81cb2.js">
+<link rel="modulepreload" href="../_observablehq/stdlib.831f6193.js">
+<script type="module">
+
+import "../_observablehq/client.d773d28c.js";
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="../">The Pudding: Data</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="./demo">Demo</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./tutorial">Tutorial</a></li>
+  </ol>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#data">Data</a></li>
+<li class="observablehq-secondary-link"><a href="#components">Components</a></li>
+<li class="observablehq-secondary-link"><a href="#visuals">Visuals</a></li>
+</ol>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<h1 id="tutorial" tabindex="-1"><a class="observablehq-header-anchor" href="#tutorial">Tutorial</a></h1>
+<p>A quick tutorial of where to put things.</p>
+<h2 id="data" tabindex="-1"><a class="observablehq-header-anchor" href="#data">Data</a></h2>
+<h3 id="raw" tabindex="-1"><a class="observablehq-header-anchor" href="#raw">Raw</a></h3>
+<p>Put raw data in the <strong><code>src/data/raw</code></strong> directory. You can use this directly and/or transform it via loaders.</p>
+<h3 id="loaders" tabindex="-1"><a class="observablehq-header-anchor" href="#loaders">Loaders</a></h3>
+<p>Create data processing/transforming files in the <strong><code>src/data/loaders</code></strong> directory. This can do the heavy lifting to generate visual-ready data.</p>
+<h2 id="components" tabindex="-1"><a class="observablehq-header-anchor" href="#components">Components</a></h2>
+<p>Create reusable functions and chart code in the <strong><code>src/components</code></strong> directory.</p>
+<h2 id="visuals" tabindex="-1"><a class="observablehq-header-anchor" href="#visuals">Visuals</a></h2>
+<p>Pages (like this) go in the <strong><code>src/visuals</code></strong> directory. Technically you can put markdown files for pages anywhere, but to keep it simple you can put them here.</p>
+<p>You can use the js code snippet markdown to call run different loaders and components. There are a few Observable Framework-centric things here, so be sure to check out the <a href="https://observablehq.com/framework/what-is-framework" target="_blank" rel="noopener noreferrer">docs</a>.</p>
+<pre><code>```js
+// code here
+```
+</code></pre>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./demo"><span>Demo</span></a></nav>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-09-06T10:38:30">Sep 6, 2024</a>.</div>
+</footer>
+</div>
